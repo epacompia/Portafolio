@@ -45,7 +45,7 @@ namespace Portafolio.Controllers
         [HttpGet]
         public IActionResult Contacto()
         {
-            return View();
+            return View();//COMPLETO
         }
 
 

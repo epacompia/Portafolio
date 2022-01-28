@@ -1,85 +1,14 @@
-﻿@{
+﻿@model HomeIndexViewModel
+
+@{
     ViewData["Title"] = "Página Principal";
 
 }
 
 
-<div class="text-center">
-    <h1 class="display-4">Soy Eduardo Natalio Pacompia Lopez</h1>
 
-    <h2>Soy un programador especializado en tecnologias .NET y Javascript</h2>
-    <img id="foto" src="~/images/EDU1.jpg" alt="Foto de Eduardo" />
-</div>
+<partial name="_Presentacion">
 
-<div class="text-center">
-    <img id="imagen-dotnet" src=~/images/net1.png alt="net logo" />
-</div>
+<partial name="_Habilidades">
 
-
-<div class="row justify-content-center text-center bg-primary">
-    <div class="col col-md-7 seccion-bienvenida">
-        <h1>To doy la bienvenida a mi portafolio</h1>
-        <p>
-            He estado desarrollando software profesionalmente desde el año 2019. He tenido el agrado de trabajar en empresas como La Policia Nacional del Perú
-            asi tambien como en SENATI, y en EVERIS
-        </p>
-    </div>
-</div>
-
-
-<div style="margin-top:-105px">
-
-
-    <div class="row justify-content-md-center text-center">
-        <div class="col col-3 bg-white habilidades" style="border-radius:15px 0 0 15px; box-shadow:0 5px 0 gray">
-            <h3>Back End</h3>
-            <p>
-                Trabajo desde la estructuracion de la base de datos con EntityFramework pasando por un proceso de analisis de negocio y definición de la arquitectura a usar de los proyectos donde pueda aportar gran capacidad de analisis
-            </p>
-            <p class="text-primary cabecera">
-                Stack:
-            </p>
-            <p>
-                ASP .NET Core, Sql Server
-            </p>
-            <p class="text-primary cabecera">
-                Experiencias:
-            </p>
-
-            <ul>
-                <li>Web Apis</li>
-                <li>ASP.NET Core</li>
-                <li>Entity Framework Core</li>
-                <li>Blazor</li>
-                <li>Querys espaciales</li>
-                <li>Linq</li>
-                <li>ASP.NET MVC</li>
-                <li>Arquitectura N CAPAS</li>
-            </ul>
-        </div>
-
-
-        <div class="col col-3 bg-white habilidades" style="border-radius:0 15px 15px 0; box-shadow:0 5px 0 gray">
-            <h3>Front End</h3>
-            <p>
-                Puedo crear front end robustos a medida del cliente los cuales cumpliran con los requerimientos del cliente.
-            </p>
-            <p class="text-primary cabecera">
-                Stack:
-            </p>
-            <p>
-                Angular, CSS puro, Blazor
-            </p>
-            <p class="text-primary cabecera">
-                Experiencias:
-            </p>
-
-            <ul>
-                <li>Boostrap</li>
-                <li>Blazor</li>
-                <li>Angular</li>
-
-            </ul>
-        </div>
-    </div>
-</div>
+<partial name="_SeccionProyectos" model="Model.Proyectos">
